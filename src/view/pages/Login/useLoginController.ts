@@ -24,8 +24,8 @@ export function useLoginController() {
     resolver: zodResolver(schema),
   });
 
-  const handleSubmit = hookFormHandleSubmit((data) => {
-    console.log('Chama  api', data);
+  const handleSubmit = hookFormHandleSubmit(async (data) => {
+    console.log(data);
   });
 
   return { handleSubmit, register, errors };
