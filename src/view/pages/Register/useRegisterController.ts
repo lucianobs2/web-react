@@ -45,7 +45,5 @@ export function useControllerRegister() {
     }
   });
 
-  console.log({ isPending });
-
   return { register, handleSubmit, errors, isPending };
 }
